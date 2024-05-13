@@ -1,2 +1,2 @@
 # cv
-Bruno Campera's CV
+Bruno Campera's CV in LaTeX format.
