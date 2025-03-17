@@ -19,6 +19,8 @@
 \usepackage{paralist} % for horizontal bullet points
 \usepackage[inline]{enumitem} % load package
 
+\usepackage{longtable} % for the work experience section allowing page breaks
+
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.7}
@@ -171,15 +173,32 @@ ItalicFont = Fontin-Italic.ttf
 
 \section{Work Experience}
 % \begin{tabular}{r|p{11cm}}
-\begin{tabular}{r|p{14.3cm}}
+\begin{longtable}{r|p{14.3cm}}
 
 \multirow{2}{*}{
 \shortstack[r]{
 \textsc{Software Engineer}\\
-12/2023 -- Current
+07/2024 -- Current
 }}
- & FS Tech \\
-% &\emph{Estagiário}\\
+& Stoneridge \\*
+&\footnotesize{
+\begin{itemize*}[label=\Large\textbullet]
+    \item Developed and maintained RESTful APIs on the backend with Java 17 and Spring, hosted on AWS EC2.
+    \item Created Lambdas on AWS for serverless applications with Java 17 and Quarkus.
+    \item Interfaced with AWS Kinesis for device intercommunication and AWS DynamoDB for \mbox{message} storage.
+    \item Modelled and implemented a MySQL database schema using SQL.
+    \item \mbox{Employed} usage of Hibernate for modelling entities and managing persistence.
+    \item Used Git for version control.
+    \end{itemize*}
+}
+\\\multicolumn{2}{c}{} \\
+
+\multirow{2}{*}{
+\shortstack[r]{
+\textsc{Software Engineer}\\
+12/2023 -- 12/2024
+}}
+ & FS Tech \\*
  &\footnotesize{
     \begin{itemize*}[label=\Large\textbullet]
         \item Developed RESTful APIs on the backend with Java 17 and Quarkus.
@@ -191,12 +210,13 @@ ItalicFont = Fontin-Italic.ttf
  }
  \\\multicolumn{2}{c}{} \\
 
+
 \multirow{2}{*}{
 \shortstack[r]{
 \textsc{Software Engineer}\\
 09/2021 -- 09/2023
 }}
- & Federal Data Processing Service (SERPRO) \\
+ & Federal Data Processing Service (SERPRO) \\*
 % &\emph{Estagiário}\\
  &\footnotesize{
     \begin{itemize*}[label=\Large\textbullet]
@@ -218,7 +238,7 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Engineer}\\
 02/2021 -- 08/2021
 }}
- & Alta Rail Technology \\
+ & Alta Rail Technology \\*
 % &\emph{Estagiário}\\
  &\footnotesize{
     \begin{itemize*}[label=\Large\textbullet]
@@ -236,7 +256,7 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Engineer}\\
 06/2019 -- 01/2021
 }}
- & Agres Sistemas Eletrônicos \\
+ & Agres Sistemas Eletrônicos \\*
  &\footnotesize{
     \begin{itemize*}[label=\Large\textbullet]
         \item Contributed to the development of an embedded application for farm tractors.
@@ -255,7 +275,7 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Software Engineer}\\
 11/2017 -- 06/2019
 }}
-& ExxonMobil BSC Brasil\\
+& ExxonMobil BSC Brasil\\*
 %&\emph{Analista de Sistemas, após estágio}\\
 &\footnotesize{
     \begin{itemize*}[label=\Large\textbullet]
@@ -266,7 +286,7 @@ ItalicFont = Fontin-Italic.ttf
         \item Independently created scripts that automated manual processes in forms, saving hundreds of hours.
     \end{itemize*}
 }
-\end{tabular}
+\end{longtable}
 %Section: Education
 \section{Education}
 \begin{tabular}{rl}
