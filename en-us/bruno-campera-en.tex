@@ -61,19 +61,6 @@ ItalicFont = Fontin-Italic.ttf
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
-%WATERMARK TEST [**not part of a CV**]---------------
-%\font\wm=''Baskerville:color=787878'' at 8pt
-%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
-%{\wm
-%	\begin{textblock}{1}(0,0)
-%		\rotatebox{-90}{\parbox{500mm}{
-%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for
-%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
-%		}
-%	}
-%	\end{textblock}
-%}
-
 \pagestyle{empty} % non-numbered pages
 
 \font\fb=''[cmr10]'' %for use with \LaTeX command
@@ -109,25 +96,10 @@ ItalicFont = Fontin-Italic.ttf
 \end{tabular}
 }
 
-
-% \section{About me}
-% Computer Engineer graduated from the Federal Technological University of Paraná (UTFPR).
-% I am a backend software engineer, using Java and Spring Boot or Quarkus, using tools like Hibernate, Spring Data JPA, JUnit and Mockito.
-% I intend to deepen my skills in high-level web programming technologies and develop expertise in infrastructure to ensure end-to-end delivery, from  gathering solution requirements to performing a working deployment.
-
-%Computer Engineer graduated from the Federal Technological University of Paraná (UTFPR). Recently, I worked as a web developer, using Java and Spring Boot on the back-end and Angular on the front-end. Formerly, I was a developer of embedded systems. Now, I intend to deepen my skills in high-level web programming technologies and develop expertise in infrastructure to ensure end-to-end delivery, from solution requirements to functional deployment.
-% Computer Engineer from the Federal University of Technology - Paraná (UTFPR). I have recently worked as a web developer, using Java and Spring Boot for the back-end and Angular for the front-end. Previously, I worked as an embedded systems developer, I am now eager to broaden my skill set by delving into higher-level web programming technology stacks and further developing expertise in infrastructure.
-%Engenheiro de Computação graduado pela Universidade Tecnológica Federal do Paraná (UTFPR) com paixão pela área de desenvolvimento de software. Possui interesse na integração software-hardware de sistemas embarcados e na conectividade da qual usufruem sistemas web e aplicações distribuídas.
-
-%Engenheiro de Computação graduado pela Universidade Tecnológica Federal do Paraná (UTFPR) com paixão pela área de desenvolvimento. Possui interesse na integração software-hardware, especialmente através de sistemas embarcados. Possui experiência profissional em desenvolvimento em linguagens de alto nível para plataforma ERP SAP e, atualmente, busca transição de sua atuação profissional para o desenvolvimento de sistemas embarcados, com programação em linguagens de baixo nível.
-
-% compreendendo, se possível, a atuação como analista funcional.
-
-%Estudante de Engenharia de Computação na Universidade Tecnológica Federal do Paraná, natural de São Paulo, SP. Possui facilidade em trabalho em equipe. Interesse em desenvolvimento de sistemas embarcados em microcontroladores, com conhecimentos prévios com plataforma ARM Cortex-M3 e Arduíno.
-
 %Section: Work Experience at the top
 
 \section{Technical Skills}
+\vspace{2pt}
 \begin{tabular}{rp{15.2cm}}
 \raggedleft Programming:
 % & Backend development with REST APIs in Java and Spring Boot, unit testing using JUnit and Mockito. Integration with PostgreSQL database and usage of SQL. Source code version control with Git. Mobile development in Dart and Flutter. Frontend development with HTML, CSS, JavaScript, Typescript, and Angular. Previous experience with development of embedded systems in C++, Qt 5, and QML.\\
@@ -136,6 +108,10 @@ ItalicFont = Fontin-Italic.ttf
     \item Javascript
     \item Dart
     \item RESTful API development
+\end{itemize*}\\
+\raggedleft Cloud:
+& \begin{itemize*}[label=\Large\textbullet]
+    \item AWS
 \end{itemize*}\\
 \raggedleft Frameworks:
 & \begin{itemize*}[label=\Large\textbullet]
@@ -154,21 +130,19 @@ ItalicFont = Fontin-Italic.ttf
 & \begin{itemize*}[label=\Large\textbullet]
     \item JUnit 5
     \item Mockito
-    \item Git for version control
+    \item Linux
+    \item Git
 \end{itemize*}\\
 \raggedleft Processes:
-% &Agile methodologies, mainly Scrum.\\
 & \begin{itemize*}[label=\Large\textbullet]
     \item Agile methodologies, mainly Scrum and Kanban
 \end{itemize*}\\
 \raggedleft Languages:
-% &Fluent in English and Brazilian Portuguese
+% &Fluent in English, Native Brazilian Portuguese
 & \begin{itemize*}[label=\Large\textbullet]
-    \item Fluent in English
+    \item English (C1 Advanced)
     \item Native Brazilian Portuguese
 \end{itemize*}\\
-%Conhecimentos intermedi\'arios:& Java and Spring Boot, C++ and Qt 5 framework, QML, PostgreSQL, metodologia ágil de software, SAP ABAP\\%& Excel, Word, PowerPoint\\
-%Conhecimentos b\'asicos:&  Scrum, Git, Java, Javascript, C\#, VBA, \textsc{Linux}%, LaTeX\\
 \end{tabular}
 
 \section{Work Experience}
@@ -180,14 +154,14 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Software Engineer}\\
 07/2024 -- Current
 }}
-& Stoneridge \\*
+& \large{Stoneridge} \\*
 &\small{
 \begin{itemize*}[label=\Large\textbullet]
     \item Developed and maintained RESTful APIs on the backend with Java 17 and Spring, hosted on AWS EC2.
     \item Created AWS Lambdas for serverless applications with Java 17 and Quarkus.
     \item Interfaced with AWS Kinesis for device intercommunication and AWS DynamoDB for \mbox{message} storage.
     \item Modeled and implemented MySQL database schema using SQL.
-    \item \mbox{Employed} usage of Hibernate for modelling entities and managing persistence.
+    \item \mbox{Employed} usage of Hibernate for modelling entities and \mbox{managing} persistence.
     \item Used Git for version control.
     \end{itemize*}
 }
@@ -198,7 +172,7 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Software Engineer}\\
 12/2023 -- 12/2024
 }}
- & FS Tech \\*
+ & \large{FS Tech} \\*
  &\small{
     \begin{itemize*}[label=\Large\textbullet]
         \item Developed RESTful APIs on the backend with Java 17 and Quarkus.
@@ -216,15 +190,14 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Software Engineer}\\
 09/2021 -- 09/2023
 }}
- & Federal Data Processing Service (SERPRO) \\*
-% &\emph{Estagiário}\\
+ & \large{Federal Data Processing Service (SERPRO)} \\*
  &\small{
     \begin{itemize*}[label=\Large\textbullet]
         \item Worked on the development of the Compras.gov.br procurement platform.
-        \item Developed RESTful APIs on the backend using Java 17 and Spring Boot 3.
-        \item Modeled and implemented a \mbox{PostgreSQL} database schema using SQL.
-        \item Interacted with database through Spring Data JPA and Hibernate ORM, along with JPQL.
-        \item Contributed to the development of a Single Page Application (SPA) using Angular, HTML, CSS, and Typescript.
+        \item \mbox{Developed} RESTful APIs on the backend using Java 17 and Spring Boot 3.
+        \item \mbox{Modeled} and implemented a \mbox{PostgreSQL} database schema using SQL.
+        \item \mbox{Interacted} with database through Spring Data JPA and Hibernate ORM, along with JPQL.
+        \item \mbox{Contributed} to the development of a Single Page Application (SPA) using Angular, HTML, CSS, and Typescript.
         \item Collaborated in an Agile team following Scrum.
         \item Used Git for version control.
      \end{itemize*}
@@ -238,8 +211,7 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Engineer}\\
 02/2021 -- 08/2021
 }}
- & Alta Rail Technology \\*
-% &\emph{Estagiário}\\
+ & \large{Alta Rail Technology} \\*
  &\small{
     \begin{itemize*}[label=\Large\textbullet]
         \item Worked on the development of an embedded application for railway trains.
@@ -256,7 +228,7 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Engineer}\\
 06/2019 -- 01/2021
 }}
- & Agres Sistemas Eletrônicos \\*
+ & \large{Agres Sistemas Eletrônicos} \\*
  &\small{
     \begin{itemize*}[label=\Large\textbullet]
         \item Contributed to the development of an embedded application for farm tractors.
@@ -275,7 +247,7 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Software Engineer}\\
 11/2017 -- 06/2019
 }}
-& ExxonMobil BSC Brasil\\*
+& \large{ExxonMobil BSC Brasil}\\*
 %&\emph{Analista de Sistemas, após estágio}\\
 &\small{
     \begin{itemize*}[label=\Large\textbullet]
@@ -289,31 +261,12 @@ ItalicFont = Fontin-Italic.ttf
 \end{longtable}
 %Section: Education
 \section{Education}
+\vspace{6pt}
 \begin{tabular}{rl}
-
-%2017 & Graduação em \textsc{Engenharia de Computação} \\ &\normalsize\textbf{Universidade Tecnológica Federal do Paraná}, Curitiba-PR\\&\\
-%2009 & Técnico em \textsc{Informática} \\&\normalsize\textbf{Escola Técnica Estadual de São Paulo}, São Paulo-SP
-
-% \multirow{2}{*}{
-% \shortstack[r]{
-% Ongoing\\
-% Expected by 10/2022
-% }} & \textsc{Agile Software Development} specialization \\ &\normalsize\textbf{Universidade Federal do Paraná - UFPR}, Curitiba-PR\\&\\
-
-%Nota: com esse \rule{2cm}{0pt} consegui dar uma largura minima pra coluna
 
 \rule{2cm}{0pt} 2023 & \textsc{Agile Software Development} specialization \\ &\normalsize\textbf{Federal University of Paraná (UFPR)}, Curitiba-PR\\&\\
 2017 & \textsc{Computer Engineering} degree \\ &\normalsize\textbf{Federal University of Technology – Paraná (UTFPR)}, Curitiba-PR\\&\\
 % 2009 & \textsc{Computer Technician} course \\ &\normalsize\textbf{Escola Técnica Estadual de São Paulo (ETESP)}, São Paulo-SP
 \end{tabular}
-
-%Section: Languages
-%\section{L\'inguas}
-%\begin{tabular}{rl}
-%\textsc{Inglês:}&Fluente para leitura, escrita e conversação\\
-%\textsc{Alemão:}&Básico para leitura, escrita e conversação\\
-%\end{tabular}
-
-
 
 \end{document}
