@@ -48,7 +48,6 @@ ItalicFont = Fontin-Italic.ttf
 %Italian hyphenation for the word: ''corporations''
 \hyphenation{im-pre-se}
 
-
 %-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
 
@@ -57,6 +56,7 @@ ItalicFont = Fontin-Italic.ttf
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
 
+\setlist[itemize]{itemsep=0pt, topsep=0pt}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
@@ -147,120 +147,65 @@ ItalicFont = Fontin-Italic.ttf
 \end{tabular}
 
 \section{Work Experience}
-% \begin{tabular}{r|p{11cm}}
-\begin{longtable}{r|p{14.3cm}}
 
-\multirow{2}{*}{
-\shortstack[r]{
-\textsc{Software Engineer}\\
-07/2024 -- Current
-}}
-& \large{Stoneridge} \\*
-&\small{
-\begin{itemize*}[label=\Large\textbullet]
+\textbf{\textsc{Software Engineer}} at \textbf{Stoneridge} \hfill \textit{07/2024 -- Current}
+\begin{itemize}[leftmargin=*]
     \item Developed and maintained RESTful APIs on the backend with Java 17 and Spring, hosted on AWS EC2.
     \item Created AWS Lambdas for serverless applications with Java 17 and Quarkus.
     \item Developed unit tests using JUnit 5 and Mockito.
-    \item Interfaced with AWS Kinesis for device intercommunication and AWS DynamoDB for \mbox{message} storage.
+    \item Interfaced with AWS Kinesis for device intercommunication and AWS DynamoDB for message storage.
     \item Modeled and implemented MySQL database schema using SQL.
-    \item \mbox{Employed} usage of Hibernate for modelling entities and \mbox{managing} persistence.
+    \item Employed usage of Hibernate for modelling entities and managing persistence.
     \item Used Git for version control.
-    \end{itemize*}
-}
-\\\multicolumn{2}{c}{} \\
+\end{itemize}
 
-\multirow{2}{*}{
-\shortstack[r]{
-\textsc{Software Engineer}\\
-12/2023 -- 12/2024
-}}
- & \large{FS Tech} \\*
- &\small{
-    \begin{itemize*}[label=\Large\textbullet]
-        \item Developed RESTful APIs on the backend with Java 17 and Quarkus.
-        \item Modeled and \mbox{implemented} a PostgreSQL database schema using SQL.
-        \item Employed usage of Hibernate ORM and Panache for database interaction, along with JPQL and Native SQL.
-        \item \mbox{Integrated} Hibernate Envers for auditing and versioning of database entities.
-        \item Used Git for version control.
-     \end{itemize*}
- }
- \\\multicolumn{2}{c}{} \\
+\textbf{\textsc{Software Engineer}} at \textbf{FS Tech} \hfill \textit{12/2023 -- 12/2024}
+\begin{itemize}[leftmargin=*]
+    \item Developed RESTful APIs on the backend with Java 17 and Quarkus.
+    \item Modeled and implemented a PostgreSQL database schema using SQL.
+    \item Employed usage of Hibernate ORM and Panache for database interaction, along with JPQL and Native SQL.
+    \item Integrated Hibernate Envers for auditing and versioning of database entities.
+    \item Used Git for version control.
+\end{itemize}
 
+\textbf{\textsc{Software Engineer}} at \textbf{Federal Data Processing Service (SERPRO)} \hfill \textit{09/2021 -- 09/2023}
+\begin{itemize}[leftmargin=*]
+    \item Worked on the development of the Compras.gov.br procurement platform.
+    \item Developed RESTful APIs on the backend using Java 17 and Spring Boot 3.
+    \item Modeled and implemented a PostgreSQL database schema using SQL.
+    \item Interacted with database through Spring Data JPA and Hibernate ORM, along with JPQL.
+    \item Contributed to the development of a Single Page Application (SPA) using Angular, HTML, CSS, and Typescript.
+    \item Collaborated in an Agile team following Scrum.
+    \item Used Git for version control.
+\end{itemize}
 
-\multirow{2}{*}{
-\shortstack[r]{
-\textsc{Software Engineer}\\
-09/2021 -- 09/2023
-}}
- & \large{Federal Data Processing Service (SERPRO)} \\*
- &\small{
-    \begin{itemize*}[label=\Large\textbullet]
-        \item Worked on the development of the Compras.gov.br procurement platform.
-        \item \mbox{Developed} RESTful APIs on the backend using Java 17 and Spring Boot 3.
-        \item \mbox{Modeled} and implemented a \mbox{PostgreSQL} database schema using SQL.
-        \item \mbox{Interacted} with database through Spring Data JPA and Hibernate ORM, along with JPQL.
-        \item \mbox{Contributed} to the development of a Single Page Application (SPA) using Angular, HTML, CSS, and Typescript.
-        \item Collaborated in an Agile team following Scrum.
-        \item Used Git for version control.
-     \end{itemize*}
-}
- %&\small{Desenvolvimento de aplicação embarcada para uso em tratores agrícolas, baseado em plataforma de arquitetura ARM, DART-MX8M. Aquisição de requisitos para a aplicação, arquitetura de soluções utilizando de boas práticas dos princípios SOLID em orientação a objetos, desenvolvimento em C++ com uso do framework Qt 5, com uso de QML para desenvolvimento gráfico em padrão MVC. }
- \\\multicolumn{2}{c}{} \\
+\textbf{\textsc{Embedded Software Engineer}} at \textbf{Alta Rail Technology} \hfill \textit{02/2021 -- 08/2021}
+\begin{itemize}[leftmargin=*]
+    \item Worked on the development of an embedded application for railway trains.
+    \item Developed modules in C++ for a distributed application.
+    \item Used Google's FlatBuffers library for serialization and module intercommunication.
+    \item Used Git for version control.
+\end{itemize}
 
-\multirow{3}{*}{
-\shortstack[r]{
-\textsc{Embedded Software}\\
-\textsc{Engineer}\\
-02/2021 -- 08/2021
-}}
- & \large{Alta Rail Technology} \\*
- &\small{
-    \begin{itemize*}[label=\Large\textbullet]
-        \item Worked on the development of an embedded application for railway trains.
-        \item \mbox{Developed} modules in C++ for a distributed application.
-        \item Used Google's FlatBuffers library for \mbox{serialization} and module intercommunication.
-        \item Used Git for version control.
-     \end{itemize*}
- }
- \\\multicolumn{2}{c}{} \\
+\textbf{\textsc{Embedded Software Engineer}} at \textbf{Agres Sistemas Eletrônicos} \hfill \textit{06/2019 -- 01/2021}
+\begin{itemize}[leftmargin=*]
+    \item Contributed to the development of an embedded application for farm tractors.
+    \item Conducted interviews and gathered application requirements.
+    \item Developed a C++ application using the Qt 5 framework.
+    \item Enhanced the object-oriented architecture by applying SOLID principles.
+    \item Designed the user interface with QML following the MVC pattern.
+    \item Collaborated in an Agile team following Scrum.
+    \item Used Git for version control.
+\end{itemize}
 
-\multirow{3}{*}{
-\shortstack[r]{
-\textsc{Embedded Software}\\
-\textsc{Engineer}\\
-06/2019 -- 01/2021
-}}
- & \large{Agres Sistemas Eletrônicos} \\*
- &\small{
-    \begin{itemize*}[label=\Large\textbullet]
-        \item Contributed to the development of an embedded application for farm tractors.
-        \item \mbox{Conducted} interviews and gathered application requirements.
-        \item Developed a \mbox{C++} \mbox{application} using the Qt 5 framework.
-        \item Enhanced the object-oriented architecture by \mbox{applying} SOLID principles.
-        \item Designed the user interface with QML following the MVC pattern.
-        \item Collaborated in an Agile team following Scrum.
-        \item Used Git for version control.
-    \end{itemize*}
-}
- \\\multicolumn{2}{c}{} \\
-
-\multirow{2}{*}{
-\shortstack[r]{
-\textsc{Software Engineer}\\
-11/2017 -- 06/2019
-}}
-& \large{ExxonMobil BSC Brasil}\\*
-%&\emph{Analista de Sistemas, após estágio}\\
-&\small{
-    \begin{itemize*}[label=\Large\textbullet]
-        \item Contributed to the development of ABAP programs for the SAP ERP platform.
-        \item Developed and maintained SAP ABAP reports.
-        \item Created editable forms using SAP Smartforms and Adobe's SAP Interactive Forms technologies.
-        \item Developed small utility web applications with HTML, CSS and JavaScript.
-        \item Independently created scripts that automated manual processes in forms, saving hundreds of hours.
-    \end{itemize*}
-}
-\end{longtable}
+\textbf{\textsc{Software Engineer}} at \textbf{ExxonMobil BSC Brasil} \hfill \textit{11/2017 -- 06/2019}
+\begin{itemize}[leftmargin=*]
+    \item Contributed to the development of ABAP programs for the SAP ERP platform.
+    \item Developed and maintained SAP ABAP reports.
+    \item Created editable forms using SAP Smartforms and Adobe's SAP Interactive Forms technologies.
+    \item Developed small utility web applications with HTML, CSS and JavaScript.
+    \item Independently created scripts that automated manual processes in forms, saving hundreds of hours.
+\end{itemize}
 %Section: Education
 \section{Education}
 \vspace{6pt}
