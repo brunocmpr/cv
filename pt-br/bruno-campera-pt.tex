@@ -9,7 +9,7 @@
 %\usepackage[big]{layaureo} 				%better formatting of the A4 page
 \usepackage{fullpage}			%better formatting of the A4 page
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
-\usepackage[a4paper, total={7.4in, 11in}]{geometry}
+\usepackage[a4paper, total={7.4in, 10in}]{geometry}
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 \usepackage{fontawesome}                %icons
@@ -18,9 +18,12 @@
 
 \usepackage{paralist} % for horizontal bullet points
 \usepackage[inline]{enumitem} % load package
+\usepackage{longtable} % for the work experience section allowing page breaks
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
+\newcommand{\preheadingspacing}{\vspace{6pt}}
+\newcommand{\postheadingspacing}{\vspace{6pt}}
 \definecolor{linkcolour}{rgb}{0,0.2,0.7}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
@@ -78,9 +81,10 @@ ItalicFont = Fontin-Italic.ttf
 
 %--------------------TITLE-------------
 \par{
-    \centering{\LARGE Bruno \textsc{Campera}}\medskip\\
-    \centering{\normalsize Engenheiro de Software Backend com foco em sistemas escaláveis e criados para fácil manutenção. Mais de 6 anos de experiência na área de TI, incluindo colaboração com equipes internacionais.}
-
+    \centering{\LARGE Bruno \textsc{Campera}}\\
+    %\medskip\\
+    \textcolor{white}{\tiny\textbf{Resumo}}\\
+    \centering{\normalsize Engenheiro de Software Backend especializado em Java, Spring Boot, Quarkus, AWS, com paixão por construir sistemas escaláveis e de fácil manutenção. Há mais de 7 anos de experiência na área de tecnologia, incluindo colaboração com equipes internacionais para entrega de soluções robustas.}
 \par}
 
 %--------------------SECTIONS-----------------------------------
@@ -121,12 +125,12 @@ ItalicFont = Fontin-Italic.ttf
 %Estudante de Engenharia de Computação na Universidade Tecnológica Federal do Paraná, natural de São Paulo, SP. Possui facilidade em trabalho em equipe. Interesse em desenvolvimento de sistemas embarcados em microcontroladores, com conhecimentos prévios com plataforma ARM Cortex-M3 e Arduíno.
 
 %Section: Work Experience at the top
-
+\preheadingspacing
 \section{Habilidades técnicas}
+\postheadingspacing
 \begin{tabular}{rp{15.2cm}}
 \raggedleft Programação:
-% & Backend development with REST APIs in Java and Spring Boot, unit testing using JUnit and Mockito. Integration with PostgreSQL database and usage of SQL. Source code version control with Git. Mobile development in Dart and Flutter. Frontend development with HTML, CSS, JavaScript, Typescript, and Angular. Previous experience with development of embedded systems in C++, Qt 5, and QML.\\
-& \begin{itemize*}[label=\Large\textbullet] %[label=\Large\textbullet, itemjoin={, }, itemjoin*={ and }]
+& \begin{itemize*}[label=\Large\textbullet]
     \item Java
     \item Javascript
     \item Dart
@@ -138,9 +142,14 @@ ItalicFont = Fontin-Italic.ttf
     \item Quarkus
     \item Flutter
 \end{itemize*}\\
+\raggedleft Cloud:
+& \begin{itemize*}[label=\Large\textbullet]
+    \item AWS
+\end{itemize*}\\
 \raggedleft Banco de dados e ORM:
 & \begin{itemize*}[label=\Large\textbullet]
     \item PostgreSQL
+    \item MySQL
     \item Hibernate
     \item Spring Data JPA
     \item PanacheORM
@@ -149,44 +158,62 @@ ItalicFont = Fontin-Italic.ttf
 & \begin{itemize*}[label=\Large\textbullet]
     \item JUnit 5
     \item Mockito
+    \item Linux
     \item Git
 \end{itemize*}\\
 \raggedleft Processos:
-% &Agile methodologies, mainly Scrum.\\
 & \begin{itemize*}[label=\Large\textbullet]
-    \item Metodologias ágeis, com destaque para vivência em Scrum
+    \item Metodologias ágeis, com destaque para vivência em Scrum e Kanban
 \end{itemize*}\\
 \raggedleft Línguas:
-% &Fluent in English and Brazilian Portuguese
 & \begin{itemize*}[label=\Large\textbullet]
-    \item Inglês fluente
-    \item Português brasileiro nativo
+    \item Inglês (C1 Avançado)
+    % \item Português brasileiro nativo %Not necessary for 
 \end{itemize*}\\
-%Conhecimentos intermedi\'arios:& Java and Spring Boot, C++ and Qt 5 framework, QML, PostgreSQL, metodologia ágil de software, SAP ABAP\\%& Excel, Word, PowerPoint\\
-%Conhecimentos b\'asicos:&  Scrum, Git, Java, Javascript, C\#, VBA, \textsc{Linux}%, LaTeX\\
 \end{tabular}
 
+\preheadingspacing
 \section{Experiência Profissional}
-% \begin{tabular}{r|p{11cm}}
-\begin{tabular}{r|p{14.1cm}}
+\postheadingspacing
+\begin{longtable}{r|p{14.1cm}}
 
-\multirow{3}{*}{
-    \shortstack[r]{
-    \textsc{Engenheiro de}\\
-    \textsc{Software}\\
-12/2023 -- Atual
+\multirow{2}{*}{
+\shortstack[r]{
+\textsc{Engenheiro de}\\
+\textsc{Software}\\
+07/2024 -- Atual
 }}
- & FS Tech \\
- &\footnotesize{
+& \large{Stoneridge} \\*
+&\small{
     \begin{itemize*}[label=\Large\textbullet]
-        \item Desenvolvi APIs RESTful no backend com Java 17 e Quarkus.
-        \item Modelei e implementei um esquema de banco de dados PostgreSQL utilizando SQL.
-        \item Empreguei o uso de \mbox{Hibernate} ORM e Panache para interação com o banco de dados, juntamente com JPQL e SQL \mbox{Nativo}.
-        \item Hibernate Envers para auditoria e versionamento de entidades do banco de dados.
+        \item \mbox{Desenvolvi} e mantive APIs REST no backend com Java 17 e Spring, hospedadas em AWS EC2.
+        \item \mbox{Criei} AWS Lambdas para aplicações serverless com Java 21 e Quarkus.
+        \item \mbox{Desenvolvi} testes unitários utilizando JUnit 5 e Mockito para garantir a qualidade do código.
+        % \item \mbox{Interagi} com AWS Kinesis para intercomunicação de dispositivos e AWS DynamoDB para armazenamento de mensagens.
+        \item \mbox{Modelei} e implementei um esquema de banco de dados MySQL utilizando SQL.
+        \item \mbox{Empreguei} o uso de Hibernate para modelagem de entidades e gerenciamento de persistência.
         \item \mbox{Utilizei} Git para controle de versão.
-     \end{itemize*}
- }
- \\\multicolumn{2}{c}{} \\
+    \end{itemize*}
+}
+\\\multicolumn{2}{c}{} \\
+
+\multirow{2}{*}{
+\shortstack[r]{
+\textsc{Engenheiro de}\\
+\textsc{Software}\\
+12/2023 -- 12/2024
+}}
+& \large{FS Tech} \\*
+&\small{
+    \begin{itemize*}[label=\Large\textbullet]
+        \item \mbox{Desenvolvi} APIs RESTful no backend com Java 17 e Quarkus.
+        \item \mbox{Modelei} e implementei um esquema de banco de dados PostgreSQL utilizando SQL.
+        \item \mbox{Empreguei} o uso de Hibernate ORM e Panache para interação com o banco de dados, juntamente com JPQL e SQL Nativo.
+        \item \mbox{Integrei} Hibernate Envers para auditoria e versionamento de entidades do banco de dados.
+        \item \mbox{Utilizei} Git para controle de versão.
+    \end{itemize*}
+}
+\\\multicolumn{2}{c}{} \\
 
  \multirow{3}{*}{
     \shortstack[r]{
@@ -194,17 +221,17 @@ ItalicFont = Fontin-Italic.ttf
     \textsc{Software}\\
 09/2021 -- 09/2023
 }}
- & Serviço Federal de Processamento de Dados (SERPRO) \\
+ & \large{Serviço Federal de Processamento de Dados (SERPRO)} \\
 % &\emph{Estagiário}\\
- &\footnotesize{
+ &\small{
     \begin{itemize*}[label=\Large\textbullet]
-        \item Trabalhei no desenvolvimento da plataforma de compras públicas Compras.gov.br.
-        \item Desenvolvi APIs RESTful no backend utilizando Java 17 e Spring Boot 3.
-        \item Modelei e \mbox{implementei} um esquema de banco de dados \mbox{PostgreSQL} usando SQL.
-        \item Empreguei o uso de Hibernate ORM e Spring Data JPA para interação com o banco de dados, juntamente com JPQL.
-        \item Contribuí para o desenvolvimento de uma SPA usando Angular, Typescript, HTML e CSS.
-        \item Participei de time ágil seguindo Scrum.
-        \item Utilizei Git para controle de versão.
+        \item \mbox{Trabalhei} no desenvolvimento da plataforma federal de compras públicas \mbox{Compras.gov.br}.
+        \item \mbox{Desenvolvi} APIs RESTful no backend utilizando Java 17 e Spring Boot 3.
+        \item \mbox{Modelei} e \mbox{implementei} um esquema de banco de dados \mbox{PostgreSQL} \mbox{usando} SQL.
+        \item \mbox{Empreguei} o uso de Hibernate ORM e Spring Data JPA para \mbox{interação} com o banco de dados, juntamente com JPQL.
+        \item \mbox{Contribuí} para o desenvolvimento de uma SPA usando Angular, Typescript, HTML e CSS.
+        \item \mbox{Participei} de time ágil seguindo Scrum.
+        \item \mbox{Utilizei} Git para controle de versão.
      \end{itemize*}
 }
  %&\footnotesize{Desenvolvimento de aplicação embarcada para uso em tratores agrícolas, baseado em plataforma de arquitetura ARM, DART-MX8M. Aquisição de requisitos para a aplicação, arquitetura de soluções utilizando de boas práticas dos princípios SOLID em orientação a objetos, desenvolvimento em C++ com uso do framework Qt 5, com uso de QML para desenvolvimento gráfico em padrão MVC. }
@@ -216,14 +243,14 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Software Embarcado}\\
 02/2021 -- 08/2021
 }}
- & Alta Rail Technology \\
+ & \large{Alta Rail Technology} \\
 % &\emph{Estagiário}\\
- &\footnotesize{
+ &\small{
     \begin{itemize*}[label=\Large\textbullet]
-        \item Trabalhei no desenvolvimento de uma aplicação embarcada para trens ferroviários.
+        \item \mbox{Trabalhei} no desenvolvimento de uma aplicação embarcada para trens ferroviários.
         \item \mbox{Desenvolvi} módulos em C++ para uma aplicação distribuída.
-        \item Utilizei a biblioteca \mbox{FlatBuffers} do Google para serialização e intercomunicação entre módulos.
-        \item Utilizei Git para controle de versão.
+        \item \mbox{Utilizei} a biblioteca \mbox{FlatBuffers} do Google para serialização e intercomunicação entre módulos.
+        \item \mbox{Utilizei} Git para controle de versão.
      \end{itemize*}
  }
  \\\multicolumn{2}{c}{} \\
@@ -234,16 +261,16 @@ ItalicFont = Fontin-Italic.ttf
 \textsc{Software Embarcado}\\
 06/2019 -- 01/2021
 }}
- & Agres Sistemas Eletrônicos \\
- &\footnotesize{
+ & \large{Agres Sistemas Eletrônicos} \\
+ &\small{
     \begin{itemize*}[label=\Large\textbullet]
-        \item Contribuí para o desenvolvimento de uma aplicação embarcada para tratores agrícolas.
-        \item Conduzi entrevistas e coletei requisitos do sistema.
-        \item Desenvolvi uma aplicação em C++ utilizando o framework Qt 5.
-        \item Aprimorei a arquitetura orientada a objetos aplicando os princípios SOLID.
-        \item Implementei a interface do usuário com QML seguindo o padrão MVC.
-        \item Colaborei em uma equipe Ágil, seguindo Scrum.
-        \item Utilizei Git para controle de versão.
+        \item \mbox{Contribuí} para o desenvolvimento de uma aplicação embarcada para tratores agrícolas.
+        \item \mbox{Conduzi} entrevistas e coletei requisitos do sistema.
+        \item \mbox{Desenvolvi} uma aplicação em C++ utilizando o framework Qt 5.
+        \item \mbox{Aprimorei} a arquitetura orientada a objetos aplicando os princípios SOLID.
+        \item \mbox{Implementei} a interface do usuário com QML seguindo o padrão MVC.
+        \item \mbox{Colaborei} em uma equipe Ágil, seguindo Scrum.
+        \item \mbox{Utilizei} Git para controle de versão.
     \end{itemize*}
 }
  \\\multicolumn{2}{c}{} \\
@@ -254,18 +281,21 @@ ItalicFont = Fontin-Italic.ttf
     \textsc{Software}\\
 11/2017 -- 06/2019
 }}
-& ExxonMobil BSC Brasil\\
+& \large{ExxonMobil BSC Brasil}\\
 %&\emph{Analista de Sistemas, após estágio}\\
-&\footnotesize{
+&\small{
     \begin{itemize*}[label=\Large\textbullet]
         \item Contribuí para o desenvolvimento de programas ABAP para a plataforma SAP ERP.
         \item \mbox{Desenvolvi relatórios SAP ABAP.}
         \item Criei formulários editáveis usando as tecnologias SAP Smartforms e Formulários Interativos da Adobe.
-        \item Criei scripts em iniciativa própria que \mbox{automatizaram} processos manuais nos formulários e economizaram centenas de horas.
+        \item Criei scripts e ferramentas web, em iniciativa própria, que automatizaram processos manuais nos formulários e economizaram centenas de horas.
     \end{itemize*}
 }
-\end{tabular}
+\end{longtable}
+
+\preheadingspacing
 \section{Formação Acadêmica}
+\postheadingspacing
 \begin{tabular}{rl}
 %2017 & Graduação em \textsc{Engenharia de Computação} \\ &\normalsize\textbf{Universidade Tecnológica Federal do Paraná}, Curitiba-PR\\&\\
 %2009 & Técnico em \textsc{Informática} \\&\normalsize\textbf{Escola Técnica Estadual de São Paulo}, São Paulo-SP
