@@ -6,7 +6,7 @@ Bruno Campera's CV in LaTeX format.
 OS: Windows 11 with WSL2 Ubuntu 22.04.4 LTS
 Latex environment installed on Linux side with the following command:
 
-`sudo apt install texlive latexmk texlive-xelatex texlive-fonts-extra texlive-lang-greek`
+`sudo apt install texlive latexmk texlive-xetex texlive-fonts-extra texlive-lang-greek`
 
 Visual Studio Code on Windows side with [LaTeX](https://marketplace.visualstudio.com/items?itemName=mathematic.vscode-latex) and [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) plugins.
 
@@ -24,7 +24,7 @@ In order for the LaTeX Workshop extension to automatically compile and update th
             "-file-line-error",
             "%DOC%"
         ]
-    }],
+    }]
 }
 ```
 
