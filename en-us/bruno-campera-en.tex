@@ -59,6 +59,7 @@ ItalicFont = Fontin-Italic.ttf
 \setlist[itemize]{itemsep=0pt, topsep=0pt}
 
 %--------------------BEGIN DOCUMENT----------------------
+\usepackage{ragged2e}
 \begin{document}
 
 \pagestyle{empty} % non-numbered pages
@@ -79,12 +80,10 @@ ItalicFont = Fontin-Italic.ttf
 \end{tabular}
 }
 
-\par{
-    \textcolor{white}{\tiny\textbf{Summary}}\\
-    %\centering{\normalsize Backend Software Engineer with a passion for highly scalable and maintainable code. Over 7 years of experience in the IT industry, including working with international teams.}
-    \centering{\normalsize Backend Software Engineer specializing in Java, AWS, Spring Boot, and Quarkus, with a passion for building highly scalable and maintainable systems. Over 7 years of experience in the technology field, including collaboration with international teams to deliver robust solutions.}
-
-\par}
+{\textcolor{white}{\tiny\textbf{Summary}}
+\justify
+\noindent
+{\normalsize Backend Software Engineer specializing in Java, AWS, Spring Boot, and Quarkus, with a passion for building highly scalable and maintainable systems. Over 7 years of experience in the technology field, including collaboration with international teams to deliver robust solutions.}}
 
 %Section: Work Experience at the top
 
